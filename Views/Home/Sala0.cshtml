@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Sala0";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h1>Bienvenido a la primera sala, de este scape room</h1>
+<p>se te presentan unas ecuaciones en las que para escapar tendras que calcular el valor de vikingod, abowl y gots.</p>
+<h2>ya no hay vuelta atras</h2>
+<img src="/imagenes/acertijo1.png"><br>
+
+<form action='@Url.Action("Habitacion")'>
+    <button onclick="alert('Pista 1: 1 Aboul=4')"> Pista 1 </button>
+<button onclick="alert('Pista 2: 1Umagots = 2')"> Pista 2 </button> <br>
+<input type="number" name="Incognita" required>
+<input type="hidden" name="sala" value="0">
+<input type="submit" value="validar">
+</form>
+
+

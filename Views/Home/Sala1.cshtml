@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Sala1";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h2>Muy bien, lograste pasar el primer acertijo, facil verdad?</h2>
+<h2>continua con el siguiente</h2>
+<p>aca tendras que determinar quien es el peluquero de verdad y quien es el farsante</p>
+<img src="/imagenes/acertijashe.jpg" width="70%">
+<h1>IMPORTANTE</h1>
+<H1>PARA SELECCIONAR SU RESPUESTA AQUI, PONGA "A"(QUE SERIA LA IMAGEN DE LA IZQUIERDA) O PONGA "B" (IMAGEN DE LA DERECHA) </H1>
+
+
+<form action='@Url.Action("Habitacion")'>
+<input type="text" name="Incognita" required>
+<input type="hidden" name="sala" value="1">
+<input type="submit" value="validar"> <br>
+<button onclick="alert('Pista 1: Mirá con atencion los accesorios.')"> Pista 1 </button>
+<button onclick="alert('Pista 2: Mira la mano de los peluqueros')"> Pista 2 </button>
+</form>
+

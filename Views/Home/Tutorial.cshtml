@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Tutorial";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+  
+    
+<h1>Bienvenidos a Abou's ScapeRoom, la sala de esape que pocas personas logran resolver</h1>
+<p>La sala de escape consiste en una serie de acertijos, adivinanzas y juegos , los cuales tendras que ir resolviendolos y poniendo la respuesta correcta.<br>
+A medida que vayas resolviendo los distintos juegos vas ir avanzando para asi poder escapar de la sala. En caso de que el usuario se trabe o no sepa como continuar, se le asiganara 2 sola pista para poder ayudarlo a pasar el juego en el que este <br>
+MUCHA SUERTE!</p>
+
+<img src="/imagenes/acertijo1.png">
+<p>aqui vemos un acertijo de adivinar el resultado de la cuenta. <br>
+En caso de no saber la respuesta y necestiar una ayuda, en la parte baja de la pantalla encontrara un boton que diga "PISTA", este te dara una ayuda para que puedas pasar a la siguiente habitacion. </p> 
+
+<h2>Cuando pase por la utlima puerta, obtendra unos ricos nachos con queso y guacamole como recompensa.</h2>
+    <img src="/imagenes/win.jpg" width="70%">
+<h2>!LOS NACHOS DE LA VICTORIA!</h2> <br>
+  <nav><a href='@Url.Action("Comenzar")'> <button>Iniciar Juego</button></a></nav>
+    <nav><a href='@Url.Action("Creditos")'> <button>Creditos</button></a></nav>

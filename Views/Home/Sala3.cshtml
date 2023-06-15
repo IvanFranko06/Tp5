@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Sala3";
+}
+<h1>@ViewData["Title"]</h1>
+<h1>ultima sala, estas muy cerca</h1>
+<h1>de que pais es este aweonao conshesumare</h1>
+<p>Хүүхэд таньд гарч ирээд түүнийг аль улсын иргэн болохыг олж мэдэхэд нь туслахыг танаас хүсч байна</p>
+<img src="/imagenes/mongol.jpg">
+
+<form action='@Url.Action("Victoria")'>
+<input type="text" name="Incognita" required>
+<input type="hidden" name="sala" value="3">
+<input type="submit" value="validar"> <br>
+<button onclick="alert('Pista 1: Es un pais del norte de asia.')"> Pista 1 </button>
+<button onclick="alert('Pista 2: Esta en el norte de China y en el Sur de Rusia')"> Pista 2 </button>
+</form>

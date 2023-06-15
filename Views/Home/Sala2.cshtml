@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Sala2";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h1>Va subiendo la dificultad....</h1>
+<p>no puedes recordar el espacio de estacionamiento de tu coche, tu mente esta de revez</p>
+<img src="/imagenes/acertijoultimoponido.png"><br>
+
+<form action='@Url.Action("Habitacion")'>
+    
+<input type="number" name="Incognita" required>
+<input type="hidden" name="sala" value="2">
+<input type="submit" value="validar"> <br>
+<button onclick="alert('Pista 1: Mirálo desde otra perspectiva/ angulo')"> Pista 1 </button>
+<button onclick="alert('Pista 2: Mirá la imagen dada vuelta')"> Pista 2 </button>
+</form>
